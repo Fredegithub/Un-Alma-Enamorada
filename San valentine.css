@@ -1,0 +1,79 @@
+body {
+    background-image: url('https://t4.ftcdn.net/jpg/06/34/26/21/240_F_634262140_j7YiZyzA6vNtx3mChtLbEIuIuyOzt3Mh.jpg'); /* Reemplaza 'ruta/a/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  }
+  
+  .contenedor-imagenes,
+  .contenedor-poema {
+    background-color: transparent; /* Fondo transparente */
+  }
+  
+  .contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px; /* Agregamos espacio a ambos lados del contenedor */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: transparent; /* Color pastel suave para el fondo del contenedor */
+  }
+  
+  .contenedor-izquierdo,
+  .contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Espacio entre las imágenes */
+    margin-top: 60px; /* Espacio de 15cm (60px) entre contenedores */
+    background-color: transparent; /* Color pastel suave para el fondo del contenedor */
+  }
+  
+  .imagen {
+    width: 150px; /* Tamaño inicial */
+    height: 150px; /* Tamaño inicial */
+    transition: transform 2s ease; /* Movimiento suave al hacer zoom */
+  }
+  
+  .imagen:hover {
+    transform: scale(1.5); /* Hacer zoom al pasar el mouse */
+  }
+  
+  .contenedor-izquierdo {
+    margin-right: 25px; /* Mover hacia la izquierda */
+    margin-left: -100px; /* Mover hacia la izquierda 10 cm (100px) */
+  }
+  
+  .contenedor-derecho {
+    margin-left: 25px; /* Mover hacia la derecha */
+    margin-right: -100px; /* Mover hacia la derecha 10 cm (100px) */
+  }
+  
+  .contenedor-poema {
+    max-width: 400px; /* Ancho máximo del poema */
+    margin: -15.1cm auto 0; /* Ajusta el margen para centrar verticalmente */
+    padding: 20px; /* Ajusta según tu preferencia */
+    border-radius: 10px;
+    text-align: center; /* Centra el texto */
+    border: 2px solid black; /* Borde negro */
+  }
+  
+  .poema {
+    font-style: italic; /* Texto en cursiva */
+  }
+
+  .titulo5 {
+    font-style: italic;
+  }
+
+  .boton-apretame {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }

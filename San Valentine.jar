@@ -1,0 +1,25 @@
+// Seleccionar todas las imágenes
+const imagenes = document.querySelectorAll('.imagen');
+
+// Agregar evento de 'click' a cada imagen
+imagenes.forEach(imagen => {
+  // Cuando se hace clic en la imagen
+  imagen.addEventListener('click', () => {
+    // Obtener la ruta de la imagen
+    const rutaImagen = imagen.getAttribute('src');
+    // Abrir la imagen en una nueva ventana del navegador
+    window.open(rutaImagen, '_blank');
+  });
+});
+
+// Seleccionar el botón
+const botonApretame = document.querySelector('.boton-apretame');
+
+// Función para mostrar el mensaje y la animación del corazón
+function mostrarMensaje() {
+  // Mostrar mensaje de alerta con la leyenda deseada
+  alert("Te quiero mucho mi princesita, te esperaré hasta el fin de mis días ❤️");
+}
+
+// Agregar evento de 'click' al botón
+botonApretame.addEventListener('click', mostrarMensaje);
