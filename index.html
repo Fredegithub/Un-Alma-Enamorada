@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="San valentine.css">
   <link rel="icon" href="icono couple.jpeg">
 </head>
-<body>
-    <!-- Elemento de audio oculto que se reproducirá automáticamente -->
-    <audio id="musica" src="1 Minute Piano Backsound  No Copyright.mp3" autoplay></audio>
-    <audio id="musica" src="1 Minute Piano Backsound  No Copyright.ogg" autoplay></audio>
-    <audio id="musica" src="1-Minute-Piano-Backsound-No-Copyright.wav" autoplay></audio>
-
+<body onclick="PlayAudio">
+<audio id="musica1" autoplay loop>
+  <source src="1 Minute Piano Backsound  No Copyright.mp3" type="audio/mpeg">
+</audio>
   <div class="contenedor-imagenes">
     <div class="contenedor-izquierdo">
       <img src="juiciosos.jpeg" alt="Imagen de San Valentín" class="imagen" id="imagen1">
@@ -62,6 +60,11 @@
       </em>
     </p>
   </div>
+  <script>
+    function PlayAudio(){
+      document.getElementById("musica1").play();
+    }
+  </script>
    <!-- Botón -->
    <button class="boton-apretame"><3</button>
   <script src="San Valentine.jar"></script>
